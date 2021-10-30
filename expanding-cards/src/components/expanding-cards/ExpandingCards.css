@@ -1,0 +1,47 @@
+.ExpandingCards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.Card{
+    height:80%;
+    width:6rem;
+    cursor: pointer;
+    border-radius: 6rem;
+    transition: all 700ms;
+    margin: 0.8rem;
+    object-fit: cover;
+}
+
+.active{
+    width:45%;
+    transition: all 700ms;
+    border-radius: 3rem;
+}
+
+@media (max-width: 1200px){
+    .Card{
+        height:70%;
+        width:4rem;
+        margin:0.3rem;
+    }
+    .active{
+        width:45%;
+    }
+}
+
+@media (max-width: 580px){
+    .Card{
+        height:60%;
+        width:2.5rem;
+        margin:0.2rem;
+
+    }
+    .active{
+        border-radius:1.8rem;
+        width:45%;
+    }
+}
